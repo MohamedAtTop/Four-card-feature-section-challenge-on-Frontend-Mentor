@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  overflow-y: hidden;
+}
+main {
+  text-align: center;
+}
+.main {
+  width: 550px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.main p {
+  color: hsl(229, 6%, 66%);
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 23rem;
+  height: 15.5rem;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.192);
+}
+.all {
+  margin: 0 2rem;
+}
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+.card p {
+  color: hsl(229, 6%, 66%);
+}
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.supervisor::after {
+  content: url(images/icon-supervisor.svg);
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.builder::after {
+  content: url(images/icon-team-builder.svg);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.karma::after {
+  content: url(images/icon-karma.svg);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+.calculator::after {
+  content: url(images/icon-calculator.svg);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+@media (max-width: 1170px) {
+  body {
+    overflow-y: auto;
+  }
+  .card {
+    width: 30vw;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+  }
+  .main {
+    width: 350px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .main p {
+    font-size: 0.9rem;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .card {
+    width: 21rem;
+  }
+}
